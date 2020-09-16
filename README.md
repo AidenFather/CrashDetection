@@ -74,7 +74,7 @@ learning model. The model was trained using the following tuned parameters.
 With the feature importance analysis, we have more insight into what features contributed, and on what scale, to mapping the test data to an output. A limitation of the feature importance plot is that it does not provide insight into the interactions between features, and it does not show how the results and features are correlated (e.g., negatively or positively). To address the shortcomings of the feature importance analysis, SHAP (Shapley Additive exPlanations) was adopted to interpret the output of the trained model. 
 Below shows the primary features that affect positively (or negatively) on crash detection.
 
-![SHAP Summary Plot](https://drive.google.com/uc?export=view&id=19PszbXglheZQfjSbEEuV3Yfv8IlD4jFw)
+![SHAP Summary Plot](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/09/chris-kitae-kim/shap3-131271-hrBQBOGK.png)
 
 
 
