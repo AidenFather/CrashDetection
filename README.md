@@ -24,11 +24,11 @@ Overall, the processed features are summarized below.
 | Category | Feature | Type | Description | 
 |---:|---|---|---|
 | Traffic | VOL | Continuous | Car volume (veh/hr) |
-|^^       | TRK | Continuous | Truck volume (veh/hr) |
-|^^       | spd |	Continuous | Speed (mph) |
-|^^       | avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
-|^^ 	  | avg_spd_10min |	Continuous	| Avg. speed for the previous 10-min interval (mph) |
-|^^ 	  | avg_spd_15min |	Continuous	| Avg. speed for the previous 15-min interval (mph) |
+|         | TRK | Continuous | Truck volume (veh/hr) |
+|         | spd |	Continuous | Speed (mph) |
+|         | avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
+|   	  | avg_spd_10min |	Continuous	| Avg. speed for the previous 10-min interval (mph) |
+|   	  | avg_spd_15min |	Continuous	| Avg. speed for the previous 15-min interval (mph) |
 |		  | dn1_spd_diff |	Continuous	| Speed difference between crash link and downstream link (mph) |
 |		  | up1_spd_diff |	Continuous	| Speed difference between crash link and    upstream link (mph) |
 |		  | Std¬_5min |	Continuous	| STD of speed for the previous 5-min (mph) |
@@ -47,15 +47,12 @@ Overall, the processed features are summarized below.
 | Weather	 |	Temp | Continuous |	Temperature (F)|
 |		     | Precip. | Continuous	| Precipitation Depth (inch) |
 |		     | Snow D |	Continuous	| Snow Depth (inch) |
-|: Solar	:| solar_altitude |	Continuous	| Angular Solar Elevation (degree) |
+| Solar	| solar_altitude |	Continuous	| Angular Solar Elevation (degree) |
 |		     | solar_azimuth |	Continuous	| Angular Solar Azimuth (degree) |
-|: Time     :| Month | Categorical	| Month |
+| Time     | Month | Categorical	| Month |
 |			 | hour |	Categorical	| Hour |
 |			 | Weekday	| Categorical |	Day of Week |
-|: Demographic :| Pop_Dense | Continuous | Town Population Density (person/mi^{2}) |
-
-
-   
+| Demographic | Pop_Dense | Continuous | Town Population Density (person/mi^{2}) |
 
 
 ## Model 
@@ -77,7 +74,7 @@ learning model. The model was trained using the following tuned parameters.
 With the feature importance analysis, we have more insight into what features contributed, and on what scale, to mapping the test data to an output. A limitation of the feature importance plot is that it does not provide insight into the interactions between features, and it does not show how the results and features are correlated (e.g., negatively or positively). To address the shortcomings of the feature importance analysis, SHAP (Shapley Additive exPlanations) was adopted to interpret the output of the trained model. 
 Below shows the primary features that affect positively (or negatively) on crash detection.
 
-![SHAP Summary Plot](https://drive.google.com/open?id=19PszbXglheZQfjSbEEuV3Yfv8IlD4jFw&authuser=kk64%40njit.edu&usp=drive_fs)
+![SHAP Summary Plot](https://drive.google.com/file/d/19PszbXglheZQfjSbEEuV3Yfv8IlD4jFw/view?usp=sharing)
 
 
 
