@@ -22,24 +22,24 @@ Note that the weather data was pulled from the [NOAA](https://www.ncdc.noaa.gov/
 Overall, the processed features are summarized below.
 
 | Category | Feature | Type | Description | 
-|---|---|---|---|
+|---:|---|---|---|
 | Traffic | VOL | Continuous | Car volume (veh/hr) |
-|---| TRK | Continuous | Truck volume (veh/hr) |
-|---| spd |	Continuous | Speed (mph) |
-|---| avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
-|		avg_spd_10min	Continuous	Avg. speed for the previous 10-min interval (mph)
-|		avg_spd_15min	Continuous	Avg. speed for the previous 15-min interval (mph)
-|		dn1_spd_diff	Continuous	Speed difference between crash link and downstream link (mph)
-|		up1_spd_diff	Continuous	Speed difference between crash link and    upstream link (mph)
-|		Std¬_5min 	Continuous	STD of speed for the previous 5-min (mph)
-|		Std_10min	Continuous	STD of speed for the previous 10-min (mph)
-|		Std_15min	Continuous	STD of speed for the previous 15-min (mph)
-|		cv_15min               	Continuous	CV of speed for the previous 5-min
-|		cv_10min               	Continuous	CV of speed for the previous 10-min
-|		cv_5min                     	Continuous	CV of speed for the previous 15-min
-|		CAPLINK	Continuous	Link Capacity (veh/hr)
-|	avg_spd_diff_up1dn1_5min    	Continuous	Avg. speed difference between upstream and downstream link for the previous 5-min (mph)
-|Geometry		MP 	Continuous	Milepost
+|         | TRK | Continuous | Truck volume (veh/hr) |
+|         | spd |	Continuous | Speed (mph) |
+|         | avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
+|		  | avg_spd_10min |	Continuous	Avg. speed for the previous 10-min interval (mph) |
+|		  | avg_spd_15min |	Continuous	Avg. speed for the previous 15-min interval (mph) |
+|		  | dn1_spd_diff |	Continuous	Speed difference between crash link and downstream link (mph) |
+|		  | up1_spd_diff |	Continuous	Speed difference between crash link and    upstream link (mph) |
+|		  | Std¬_5min |	Continuous	STD of speed for the previous 5-min (mph) |
+|		  | Std_10min |	Continuous	STD of speed for the previous 10-min (mph) |
+|		  | Std_15min |	Continuous	STD of speed for the previous 15-min (mph) |
+|		  | cv_15min | Continuous | CV of speed for the previous 5-min |
+|		  | cv_10min | Continuous | CV of speed for the previous 10-min |
+|		  | cv_5min  | Continuous | CV of speed for the previous 15-min |
+|		  | CAPLINK	| Continuous | Link Capacity (veh/hr) |
+|	      | avg_spd_diff_up1dn1_5min | Continuous| Avg. speed difference between upstream and downstream link for the previous 5-min (mph)|
+|:Geometry:| MP | Continuous | Milepost
 |		Lanes	Categorical	Number of Lanes
 |		RAMP_prox	Categorical	Ramp Proximity 
 |		Grade	Continuous	Vertical Road Grade (%)
