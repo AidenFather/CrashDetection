@@ -6,13 +6,16 @@ Prompt crash detection is essential to reduce incident congestion and increase r
 
 ## Data 
 
-We obtained and processed six years of crash data occurred on NJ Route 3 
+We obtained and processed six years of crash data (occurred on NJ Route 3) and crash related data, including INRIX link speed, road vertical geometry, weather, and population density.
+Below shows the download link.
 
-- NJ highway crash data
+- NJ road crash data [download](https://www.state.nj.us/transportation/refdata/accident/rawdata01-current.shtm)
+- INRIX probe vehicle data for TMC links [download](https://ritis.org/login?r=Lw==)
+- Road geometry [download](https://www.state.nj.us/transportation/refdata/sldiag/)
+- Population density [download](https://nj.gov/health/fhs/primarycare/documents/Rural%20NJ%20density2015-revised%20municpalities.pdf)
+- Weather data [Teterborough Station - download](https://drive.google.com/open?id=1_OBGpLXJrTiC8SVJtSA7xWXSbxTZNlYz&authuser=kk64%40njit.edu&usp=drive_fs) 
+- Road Traffic Volume [NJCMS NJ3 only - download](https://drive.google.com/open?id=1Qmf8xlhdomH4PCHPdXWXEroE3_OB3StN&authuser=kk64%40njit.edu&usp=drive_fs)
 
 
-but that's only the start of our
-training set for this supervised machine learning problem. We use many different features to try
-to differentiate between car accidents occuring or not. These include
 
 
