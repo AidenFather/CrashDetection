@@ -24,11 +24,11 @@ Overall, the processed features are summarized below.
 | Category | Feature | Type | Description | 
 |---:|---|---|---|
 | Traffic | VOL | Continuous | Car volume (veh/hr) |
-|         | TRK | Continuous | Truck volume (veh/hr) |
-|         | spd |	Continuous | Speed (mph) |
-|         | avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
-|		  | avg_spd_10min |	Continuous	| Avg. speed for the previous 10-min interval (mph) |
-|		  | avg_spd_15min |	Continuous	| Avg. speed for the previous 15-min interval (mph) |
+|^^       | TRK | Continuous | Truck volume (veh/hr) |
+|^^       | spd |	Continuous | Speed (mph) |
+|^^       | avg_spd_5min | Continuous	| Avg. speed for the previous 5-min interval (mph) |
+|^^ 	  | avg_spd_10min |	Continuous	| Avg. speed for the previous 10-min interval (mph) |
+|^^ 	  | avg_spd_15min |	Continuous	| Avg. speed for the previous 15-min interval (mph) |
 |		  | dn1_spd_diff |	Continuous	| Speed difference between crash link and downstream link (mph) |
 |		  | up1_spd_diff |	Continuous	| Speed difference between crash link and    upstream link (mph) |
 |		  | Std¬_5min |	Continuous	| STD of speed for the previous 5-min (mph) |
@@ -39,12 +39,12 @@ Overall, the processed features are summarized below.
 |		  | cv_5min  | Continuous | CV of speed for the previous 15-min |
 |		  | CAPLINK	| Continuous | Link Capacity (veh/hr) |
 |	      | avg_spd_diff_up1dn1_5min | Continuous| Avg. speed difference between upstream and downstream link for the previous 5-min (mph)|
-|: Geometry :| MP | Continuous | Milepost |
+| Geometry | MP | Continuous | Milepost |
 |		     |Lanes |	Categorical |	Number of Lanes |
 |		     | RAMP_prox |	Categorical	| Ramp Proximity |
 |		     | Grade |	Continuous	| Vertical Road Grade (%) |
 |		     | RAMP_shop |	Categorical	| Shopping Mall Entrance Existence (y/n) |
-|: Weather	:|	Temp | Continuous |	Temperature (F)|
+| Weather	 |	Temp | Continuous |	Temperature (F)|
 |		     | Precip. | Continuous	| Precipitation Depth (inch) |
 |		     | Snow D |	Continuous	| Snow Depth (inch) |
 |: Solar	:| solar_altitude |	Continuous	| Angular Solar Elevation (degree) |
