@@ -23,8 +23,7 @@ Note that the weather data was pulled from the [NOAA](https://www.ncdc.noaa.gov/
 ## Data Process & Integration
 
 Data processing of the collected data is shown in [NJ3_Crash_Data_Pre-processing.ipynb](NJ3_Crash_Data_Pre-processing.ipynb).
-Then, the processed datasets were merged together by time and location, which is shown in [Join_CrashData_RoadLink_INRIX-TMC.ipynb]
-(Join_CrashData_RoadLink_INRIX-TMC.ipynb)
+Then, the processed datasets were merged together by time and location, which is shown in [Join_CrashData_RoadLink_INRIX-TMC.ipynb](Join_CrashData_RoadLink_INRIX-TMC.ipynb)
 
 Overall, the features used for the model training are summarized below.
 
