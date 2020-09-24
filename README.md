@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Prompt crash detection is essential to reduce incident congestion and increase road safety. To that end, I developed a cost-effective and reliable road crash detection model using XGBoost. The model was trained with the integrated dataset containing traffic, weather, road geometry, solar position, and population density. These data have both a direct and indirect impact on causing crashes, and most of the data are downloaded from the state DOT website. A total of six years crash and non-crash records were processed and used for the model train and test. The dataset for the model train and test includes 30 features and 54,643 observations. 
+Prompt crash detection is essential to reduce incident congestion and increase road safety. Conventional road crash detections have been performed with various Intelligent Transportation Systems (ITS) devices. However, the deployment of ITS devices along a corridor requires tremendous amount of money and time. To that end, I developed a cost-effective and reliable road crash detection model using XGBoost. The model was trained with the integrated dataset containing traffic, weather, road geometry, solar position, and population density. These data have both a direct and indirect impact on causing crashes, and most of the data are downloaded from the state DOT website. A total of six years crash and non-crash records were processed and used for the model train and test. The dataset for the model train and test includes 30 features and 54,643 observations. 
 
 ## Data 
 
-We obtained and processed six years of crash data (occurred on NJ Route 3) and crash related data, including INRIX link speed, road geometry, weather, and population density.
+We obtained and processed six years of crash data (occurred on NJ Route 3) and crash related data, including INRIX link speed, road geometry, weather, and population density. 
 Below shows the download link.
 
 - NJ road crash data [(download)](https://www.state.nj.us/transportation/refdata/accident/rawdata01-current.shtm)
@@ -19,7 +19,14 @@ Below shows the download link.
 
 Note that the weather data was pulled from the [NOAA](https://www.ncdc.noaa.gov/data-access/quick-links) and the vertical profile was obtained from the Google Earth.
 
-Overall, the processed features are summarized below.
+
+## Data Process & Integration
+
+Data processing of the collected data is shown in [NJ3_Crash_Data_Pre-processing.ipynb](NJ3_Crash_Data_Pre-processing.ipynb).
+Then, the processed datasets were merged together by time and location, which is shown in [Join_CrashData_RoadLink_INRIX-TMC.ipynb]
+(Join_CrashData_RoadLink_INRIX-TMC.ipynb)
+
+Overall, the features used for the model training are summarized below.
 
 | Category | Feature | Type | Description | 
 |---:|---|---|---|
@@ -68,6 +75,7 @@ learning model. The model was trained using the following tuned parameters.
 - `eval_metric`: auc
 - `eta`: 0.5
 
+The model train and test is shown in [XGBoostModeling.ipynb](XGBoostModeling.ipynb)
 
 ## SHAP Analysis
 
@@ -76,5 +84,9 @@ Below shows the primary features that affect positively (or negatively) on crash
 
 ![SHAP Summary Plot](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/09/chris-kitae-kim/shap3-131271-hrBQBOGK.png)
 
+## Notebooks
+- NJ3_Crash_Data_Pre-processing.ipynb
+- Join_CrashData_RoadLink_INRIX-TMC.ipynb
+- XGBoostModeling.ipynb
 
 
