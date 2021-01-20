@@ -1,4 +1,4 @@
-# Automated Road Crash Detection  
+# Road Crash Detection  
 
 ## Introduction
 
