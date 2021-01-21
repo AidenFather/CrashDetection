@@ -76,17 +76,7 @@ learning model. The model was trained using the following tuned parameters.
 
 The model train and test is shown in [XGBoostModeling.ipynb](XGBoostModeling.ipynb)
 
-## HeatMap
-<svg width="100" height="100" xmlns="heatmap2014_time.html">
-<foreignObject width="100" height="100">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-        <ul>
-            <li>text</li>
-        </ul>
-        <!-- Other embed HTML element/text into SVG -->
-    </div>
-</foreignObject>
-</svg>
+
 
 ## SHAP Analysis
 
@@ -96,8 +86,9 @@ Below shows the primary features that affect positively (or negatively) on crash
 ![SHAP Summary Plot](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/09/chris-kitae-kim/shap3-131271-hrBQBOGK.png)
 
 ## Notebooks
-- NJ3_Crash_Data_Pre-processing.ipynb
-- Join_CrashData_RoadLink_INRIX-TMC.ipynb
-- XGBoostModeling.ipynb
+- Get_weather-NJ.ipynb
+- Merge_TMC-INRIX_Tables.ipynb
+- Solar Position_Vertical Grade_Weather_and_Non-Crash Data.ipynb
+- XGBoost Modeling.ipynb
 
 
