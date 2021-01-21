@@ -76,6 +76,18 @@ learning model. The model was trained using the following tuned parameters.
 
 The model train and test is shown in [XGBoostModeling.ipynb](XGBoostModeling.ipynb)
 
+## HeatMap
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="100" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+        <ul>
+            <li>text</li>
+        </ul>
+        <!-- Other embed HTML element/text into SVG -->
+    </div>
+</foreignObject>
+</svg>
+
 ## SHAP Analysis
 
 With the feature importance analysis, we have more insight into what features contributed, and on what scale, to mapping the test data to an output. A limitation of the feature importance plot is that it does not provide insight into the interactions between features, and it does not show how the results and features are correlated (e.g., negatively or positively). To address the shortcomings of the feature importance analysis, SHAP (Shapley Additive exPlanations) was adopted to interpret the output of the trained model. 
